@@ -1,0 +1,89 @@
+##MATERIAUX
+
+> plan:
+    reflect(0-1):	0
+    transparency(0-1):	0
+    refract(0-5):	2
+    shine:	  	56
+    texture:            textures/damier.bmp
+    coef:               300
+
+> bool2:
+    reflect(0-1):	1
+    transparency(0-1):	0
+    refract(0-5):	0
+    shine:	  	56
+
+> bool:
+    reflect(0-1):	0,5
+    transparency(0-1):	0
+    refract(0-5):	0
+    shine:	  	56
+
+##LIGHT
+
+> light1_nom:
+  pos:            10 10 10
+  intensity:      10
+  color:          255 0 0 255
+
+> light2_nom:
+  pos:            -10 10 10
+  intensity:      10
+  color:          0 0 255
+
+> light3_nom:
+  pos:            10 -10 10
+  intensity:      10
+  color:          0 255 0
+
+##OBJETS
+
+> sphere_rouge:
+    mat:            bool
+    quadra:         1 1 1 0 0 0 0 0 0 -10
+    pos:            10 0 2
+    rot:            0 0 0
+    color:          255 0 0
+
+> sphere_jaune:
+    mat:            bool
+    quadra:         1 1 1 0 0 0 0 0 0 -1
+    pos:            4 2 0
+    rot:            0 0 0
+    color:          255 255 0
+
+> sphere_verte:
+    mat:            bool
+    quadra:         1 1 1 0 0 0 0 0 0 -5
+    pos:            19 15 5
+    rot:            0 0 0
+    color:          0 255 0
+
+> sphere_orange:
+    mat:            bool
+    quadra:         1 1 1 0 0 0 0 0 0 -5
+    pos:            19 -12 5
+    rot:            0 0 0
+    color:          255 127 16
+
+> sphere_bleu:
+    mat:            bool
+    quadra:         1 1 1 0 0 0 0 0 0 -1
+    pos:            16 13 0
+    rot:            0 0 0
+    color:          0 0 255
+
+> sphere_reflect
+    mat:            bool2
+    quadra:         1 1 1 0 0 0 0 0 0 -1
+    pos:            7 6 0
+    rot:            0 0 0
+    color:          255 255 255
+
+> plane:
+     mat:            plan
+     quadra:         0 1 0 0 0 0 0 0 0 -1
+     pos:            0 0 -2
+     rot:            0 0 0
+     color:          255 200 233

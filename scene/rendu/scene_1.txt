@@ -1,0 +1,70 @@
+##MATERIAUX
+
+> tex:
+    transparency(0-1):	0
+    reflect(0-1):	0
+    refract(0-5):	0
+    shine:	  	10
+    coef:               300
+    texture:            textures/mur.bmp
+
+##LIGHT
+
+> light1:
+  pos:            90 90 90
+  intensity:      100
+  color:          255 255 255
+
+> light2:
+  pos:            -90 90 90
+  intensity:      100
+  color:          255 255 255
+
+> light3:
+  pos:            90 -90 90
+  intensity:      100
+  color:          255 255 255
+
+##OBJETS
+
+> mur_droite:
+    mat:            tex
+    quadra:         0 1 0 0 0 0 0 0 0 -1
+    pos:            0 100 -2
+    rot:            90 0 0
+    color:          255 200 233 100
+
+> mur_gauche:
+    mat:            tex
+    quadra:         0 1 0 0 0 0 0 0 0 -1
+    pos:            0 -100 -2
+    rot:            90 0 0
+    color:          255 200 233 100
+
+> mur_dessous:
+    mat:            tex
+    quadra:         0 1 0 0 0 0 0 0 0 -1
+    pos:            0 0 -100
+    rot:            0 0 0
+    color:          255 200 233 100
+
+> mur_dessus:
+    mat:            tex
+    quadra:         0 1 0 0 0 0 0 0 0 -1
+    pos:            0 0 100
+    rot:            0 0 0
+    color:          255 0 255
+
+> mur_derriere:
+    mat:            tex
+    quadra:         0 1 0 0 0 0 0 0 0 -1
+    pos:            100 0 0
+    rot:            0 90 0
+    color:          255 200 233 100
+
+> mur_devant:
+    mat:            tex
+    quadra:         0 1 0 0 0 0 0 0 0 -1
+    pos:            -100 0 0
+    rot:            0 90 0
+    color:          255 200 233 100

@@ -1,0 +1,87 @@
+##MATERIAUX
+> plan:
+    reflect(0-1):	0,5
+    transparency(0-1):	0
+    refract(0-5):	1
+    shine:	  	56
+
+##LIGHT
+
+> light:
+  pos:            0 -20 10
+  intensity:      100
+  color:          255 255 255
+
+##OBJETS
+
+> cyl:
+    mat:            plan
+    quadra:         1 1 0 0 0 0 0 0 0 -1
+    pos:            20 10 0
+    rot:            90 0 0
+    color:          50 100 255
+    mapping:        plane
+
+> para:
+    mat:            plan
+    quadra:         0 1 1 0 0 0 1 0 0 1
+    pos:            20 5 5
+    rot:            90 0 90
+    color:          50 100 255
+    mapping:        plane
+
+> para2:
+    mat:            plan
+    quadra:         0 1 1 0 0 0 1 0 0 1
+    pos:            20 0 0
+    rot:            270 0 90
+    color:          50 100 255
+    mapping:        plane
+
+> sphere1:
+    mat:            plan
+    quadra:         1 1 1 0 0 0 0 0 0 -1
+    pos:            7 -5 0
+    rot:            0 0 0
+    mapping:        sphere
+    color:          50 100 255
+
+> sphere2:
+    mat:            plan
+    quadra:         1 1 1 0 0 0 0 0 0 -1
+    pos:            7 -5 2
+    rot:            0 0 0
+    color:          50 100 255
+    mapping:        plane
+
+> sphere3:
+    mat:            plan
+    quadra:         1 1 1 0 0 0 0 0 0 -1
+    pos:            7 -5 4
+    rot:            0 0 0
+    color:          50 100 255
+    mapping:        plane
+
+> sphere4:
+    mat:            plan
+    quadra:         1 1 1 0 0 0 0 0 0 -1
+    pos:            7 -5 6
+    rot:            0 0 0
+    color:          50 100 255
+    mapping:        plane
+
+> plane:
+     mat:            plan
+     quadra:         0 1 0 0 0 0 0 0 0 -1
+     pos:            0 0 -2
+     rot:            0 0 0
+     color:          50 100 255
+     mapping:        plane
+
+> plane2:
+     mat:            plan
+     quadra:         0 1 0 0 0 0 0 0 0 -1
+     pos:            50 0 0
+     rot:            0 90 0
+     color:          50 100 255
+     mapping:        plane

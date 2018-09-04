@@ -1,0 +1,58 @@
+
+##MATERIAUX
+
+> nom_texture:
+    color:		255 200 233 100
+    transparency(0-1):	0
+    reflect(0-1):	0
+    refract(0-5):	0
+    shine:	  	10
+
+> texture2:
+    color:		255 200 233 100
+    transparency(0-1):	0
+    reflect(0-1):	0
+    refract(0-5):	0
+    shine:	  	10
+    coef:               100
+    texture:            textures/test.bmp
+
+##LIGHT
+
+> light1_nom:
+    pos:            -30 -30 30
+    intensity:      10
+    color:          255 255 255 255
+
+##OBJETS
+
+> plane:
+    mat:            texture2
+    quadra:         0 1 0 0 0 0 0 0 0 -1
+    pos:            0 0 -2
+    rot:            90 0 0
+    color:          255 200 233 255
+
+> cyl:
+    mat:            nom_texture
+    type:           cyl
+    quadra:         1 1 0 0 0 0 0 0 0 -1
+    pos:            0 0 0
+    rot:            0 45 45
+    color:          255 0 255 255
+
+> boule:
+    mat:            texture2
+    type:           sphere
+    quadra:         1 1 1 0 0 0 0 0 0 -2
+    pos:     	    15 0 0
+      rot:	    0 0 0
+     color:          100 200 233 255
+
+> xcone:
+    mat:            texture2
+    type:           cone
+    quadra:         1 -1 1 0 0 0 0 0 0 0
+    pos:     	    15 -5 0
+    rot:	    0 0 0
+    color:          255 255 255 255

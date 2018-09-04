@@ -1,0 +1,120 @@
+##MATERIAUX
+> earth:
+    color:		255 200 233 100
+    transparency(0-1):	0
+    reflect(0-1):	0
+    refract(0-5):	1,333
+    shine:	  	10
+    coef:               1
+    texture:            textures/earth.bmp
+
+> tex:
+    color:		255 200 233 100
+    transparency(0-1):	0
+    reflect(0-1):	0
+    refract(0-5):	1,333
+    shine:	  	10
+    coef:               10
+    texture:            textures/water2.bmp
+
+> tex2:
+    color:		255 200 233 100
+    transparency(0-1):	0
+    reflect(0-1):	0
+    refract(0-5):	1,333
+    shine:	  	10
+    coef:               10
+    texture:            textures/grass.bmp
+
+> tex1:
+    color:		255 200 233 100
+    transparency(0-1):	0
+    reflect(0-1):	0
+    refract(0-5):	1,333
+    shine:	  	10
+    coef:               10
+    texture:            textures/LavaTexture.bmp
+
+> tex3:
+    color:		255 200 233 100
+    transparency(0-1):	0
+    reflect(0-1):	0
+    refract(0-5):	1,333
+    shine:	  	10
+    coef:               10
+    texture:            textures/EngineTurning.bmp
+     
+##LIGHT
+
+> sun:
+   pos:            -10 10 10
+   intensity       30
+   color           255 255 255 255
+
+#> light1_nom:
+#  pos:            10 10 10
+#  intensity:      10
+#  color:          255 0 0 255
+
+#> light2_nom:
+#  pos:            -10 10 10
+#  intensity:      10
+#  color:          0 0 255
+
+#> light3_nom:
+#  pos:            10 -10 10
+#  intensity:      10
+#  color:          0 255 0
+
+##OBJETS
+
+> xcone:
+    mat:            tex2
+    quadra:         1 -1 1 0 0 0 0 0 0 0
+    pos:	    5 3 0
+    rot:     	    0 0 0
+    mapping:        cylinder
+    color:          255 255 255 255
+
+> cyl:
+    mat:            tex1
+    quadra:         1 0 1 0 0 0 0 0 0 -1
+    pos:	    7 -4 0
+    rot:     	    20 20 0
+    mapping:        cylinder
+    color:          255 255 255 255
+
+> earth:
+    mat:            earth
+    quadra:         1 1 1 0 0 0 0 0 0 -1
+    pos:	    8 -2 0.5
+    rot:     	    0 0 -120
+    mapping:        sphere
+    color:          100 255 100 255
+
+
+> plan:
+    mat:            tex
+    quadra:         0 1 0 0 0 0 0 0 0 -1
+    pos:            0 0 -3
+    rot:            0 0 0
+    mapping:        plane
+    color:          255 200 233 100
+
+> hyperboloid:
+    mat:            tex3
+    quadra:         1 -1 1 0 0 0 0 0 0 -1
+    pos:	    10 0 2
+    rot:     	    90 0 0
+    mapping:        cylinder
+    color:          255 255 255 255
+
+> hyperbolid2:
+    mat:            tex3
+    quadra:         1 -1 1 0 0 0 0 0 0 2
+    pos:	    10 0 2
+    rot:     	    0 0 0
+    mapping:        cylinder
+    color:          255 255 255 255
+
+##MATERIAUX

@@ -1,0 +1,51 @@
+##MATERIAUX
+> plan:
+    reflect(0-1):	0,5
+    transparency(0-1):	0,5
+    refract(0-5):	1
+    shine:	  	56
+
+> bool:
+    reflect(0-1):	0
+    transparency(0-1):	0
+    refract(0-5):	0
+    shine:	  	56
+    texture:            textures/earth.bmp
+
+##LIGHT
+
+> light:
+  pos:            10 10 10
+  intensity:      100
+  color:          255 255 255
+
+##OBJETS
+
+> cyl_rouge:
+    mat:            plan
+    quadra:         1 1 0 0 0 0 0 0 0 -1
+    pos:            1 0 0
+    rot:            0 0 45
+    color:          255 0 0
+
+> sphere_earth:
+    mat:            bool
+    quadra:         1 1 1 0 0 0 0 0 0 -1
+    pos:            6 -5 0
+    rot:            0 0 0
+    mapping:        sphere
+    color:          255 255 255
+
+> cone_orange:
+    mat:            plan
+    quadra:         1 -1 1 0 0 0 0 0 0 5
+    pos:            19 -12 5
+    rot:            45 0 0
+    color:          255 127 100
+
+> plane:
+     mat:            plan
+     quadra:         0 1 0 0 0 0 0 0 0 -1
+     pos:            0 0 -2
+     rot:            0 0 0
+     color:          255 200 100

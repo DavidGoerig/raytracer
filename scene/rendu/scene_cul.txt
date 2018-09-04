@@ -1,0 +1,65 @@
+##MATERIAUX
+
+> plan:
+    reflect(0-1):	0,2
+    transparency(0-1):	0
+    refract(0-5):	2
+    shine:	  	56
+    texture:		textures/drap.bmp
+
+> bool:
+    texture:		textures/skin.bmp
+    reflect(0-1):	0
+    transparency(0-1):	0
+    refract(0-5):	0
+    shine:	  	56
+    coef:		100
+
+##LIGHT
+
+> light1:
+    pos:            40 40 40
+    intensity:      10
+    color:          255 255 255 255
+
+##OBJETS
+
+> sphererouge:
+    mat:            bool
+    quadra:         1 1 1 0 0 0 0 0 0 -10
+    pos:            10 0 0
+    rot:            0 0 0
+    color:          255 255 255
+    mapping:        sphere
+
+> spherereflect
+    mat:            bool
+    quadra:         1 1 1 0 0 0 0 0 0 -10
+    pos:            10 3 0
+    rot:            0 0 0
+    color:          255 255 255
+    mapping:        sphere
+
+> boobs1
+    mat:            bool
+    quadra:         1 1 1 0 0 0 0 0 0 -10
+    pos:            0 0 0
+    rot:            0 0 0
+    color:          255 255 255
+    mapping:        sphere
+
+> boobs2
+    mat:            bool
+    quadra:         1 1 1 0 0 0 0 0 0 -10
+    pos:            0 3 0
+    rot:            0 0 0
+    color:          255 255 255
+    mapping:        sphere
+
+> plane3:
+     mat:            plan
+     quadra:         0 1 0 0 0 0 0 0 0 -1
+     pos:            0 0 -2
+     rot:            0 0 0
+     color:          255 255 255
+     mapping:        plane

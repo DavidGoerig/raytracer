@@ -1,0 +1,41 @@
+##MATERIAUX
+
+> nom_texture:
+    color:		255 200 233 100
+    reflect(0-1):	1
+    transparency(0-1):	1
+    refract(0-5):	2
+    shine:	  	56
+
+> unautreMater:
+    color:        255 200 233 255
+
+##LIGHT
+
+> light1_nom:
+    pos(x,y,z):     0,0,0
+    intensity:      100
+    color:          255 200 233 255
+
+##OBJETS
+
+> nom_sphere:
+    mat:            nom_texture
+    type:           sphere
+    quadra:         0 1 0 0 0 0 0 0 0 -1
+    pos(x,y,z):     0,0,-2
+    rot(x,y,z):     0,0,0
+    color:          255 200 233 100
+
+> l:
+    mat:            nom_texture
+    type:           sphere
+    quadra:         1 1 1 0 0 0 0 0 0 -1
+    pos(x,y,z):     5,5,1
+    rot(x,y,z):     0,0,0
+    color:          100 200 233 100
+
+##MATERIAUX
+
+    > nom_texture2:
+        color:        254 200 233 155

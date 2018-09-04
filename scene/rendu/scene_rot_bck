@@ -1,0 +1,52 @@
+##MATERIAUX
+
+> nom_texture:
+    color:		255 200 233 100
+    transparency(0-1):	0
+    reflect(0-1):	0
+    refract(0-5):	1,333
+    shine:	  	10
+
+##LIGHT
+
+> light3_nom:
+  pos:            -30 0 0
+  intensity:      20
+  color:          255 255 255 255
+
+##OBJETS
+
+> plane:
+    mat:            nom_texture
+    type:           plane
+    quadra:         0 1 0 0 0 0 0 0 0 -1
+    pos:            0 0 -15
+    rot:            0 0 0
+    color:          0 255 255 100
+
+> lol:
+    mat:            nom_texture
+    type:           lel
+    quadra:         -1 1 -4 0 0 0 0 0 0 10
+    pos:            30 0 0
+    rot:            0 0 0
+    color:          255 0 255 100
+
+# cette quadra donne deux mur paralleles espacés de J (10 dans cet exemple)
+#> lol:
+#    mat:            nom_texture
+#    type:           lel
+#    quadra:         0 0 -1 0 0 0 0 0 0 10
+#    pos:            30 0 0
+#    rot:            0 0 0
+#    color:          255 0 255 100
+
+# cette quadra donne un hyperboloide dont les deux parties
+# sont espacées de J (10 dans cet exemple) (j = 0 donne un cone)
+#> lol:
+#    mat:            nom_texture
+#    type:           lel
+#    quadra:         1 1 -1 0 0 0 0 0 0 10
+#    pos:            0 0 0
+#    rot:            45 0 0
+#    color:          255 0 255 100

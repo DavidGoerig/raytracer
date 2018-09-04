@@ -1,0 +1,64 @@
+##MATERIAUX
+
+> plan:
+    reflect(0-1):	0
+    transparency(0-1):	0
+    refract(0-5):	1
+    shine:	  	56
+    texture:            textures/damier.bmp
+    coef:               30
+
+> bool2:
+    reflect(0-1):	0
+    transparency(0-1):	0
+    refract(0-5):	0
+    shine:	  	56
+    texture:            textures/earth.bmp
+
+> tr:
+    reflect(0-1):	0
+    transparency(0-1):	1
+    refract(0-5):	1,333
+    shine:	  	56
+
+##LIGHT
+
+> light1_nom:
+  pos:            10 10 10
+  intensity:      10
+  color:          255 255 255
+
+> light2_nom:
+  pos:            -10 10 10
+  intensity:      10
+  color:          255 255 255
+
+> light3_nom:
+  pos:            10 -10 10
+  intensity:      10
+  color:          255 255 255
+
+##OBJETS
+
+> earth:
+    mat:            bool2
+    quadra:         1 1 1 0 0 0 0 0 0 -10
+    pos:            6 0 2
+    rot:            0 0 0
+    color:          255 255 255
+    mapping:        sphere
+
+> sphere_transparente:
+    mat:            tr
+    quadra:         1 1 1 0 0 0 0 0 0 -1
+    pos:            0 0 2
+    rot:            0 0 0
+    color:          255 255 255
+
+> plane:
+     mat:            plan
+     quadra:         0 1 0 0 0 0 0 0 0 -1
+     pos:            0 0 -2
+     rot:            0 0 0
+     mapping:        plane
+     color:          255 255 255

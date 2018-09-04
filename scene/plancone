@@ -1,0 +1,57 @@
+##MATERIAUX
+> earth:
+    color:		255 200 233 100
+    transparency(0-1):	0
+    reflect(0-1):	0
+    refract(0-5):	1,333
+    shine:	  	10
+    coef:               1
+    texture:            textures/earth.bmp
+
+> tex:
+    color:		255 200 233 100
+    transparency(0-1):	0
+    reflect(0-1):	0
+    refract(0-5):	1,333
+    shine:	  	10
+    coef:               10
+     
+##LIGHT
+
+> sun:
+   pos:            -10 10 10
+   intensity       30
+   color           255 255 255 255
+
+#> light1_nom:
+#  pos:            10 10 10
+#  intensity:      10
+#  color:          255 0 0 255
+
+#> light2_nom:
+#  pos:            -10 10 10
+#  intensity:      10
+#  color:          0 0 255
+
+#> light3_nom:
+#  pos:            10 -10 10
+#  intensity:      10
+#  color:          0 255 0
+
+##OBJETS
+
+> cone:
+    mat:            tex
+    quadra:         1 -1 1 0 0 0 0 0 0 0
+    pos:	    5 3 0
+    rot:     	    0 0 0
+    mapping:        cylinder
+    color:          50 255 255 255
+
+> plan:
+    mat:            tex
+    quadra:         0 1 0 0 0 0 0 0 0 -1
+    pos:            0 0 -3
+    rot:            0 0 0
+    mapping:        plane
+    color:          100 100 150 100

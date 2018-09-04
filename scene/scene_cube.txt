@@ -1,0 +1,65 @@
+##MATERIAUX
+
+> plan:
+    color:		255 200 233 100
+    reflect(0-1):	1
+    transparency(0-1):	1
+    refract(0-5):	2
+    shine:	  	56
+
+##LIGHT
+
+> light1:
+    pos:            -30 -30 30
+    intensity:      10
+    color:          255 255 255
+
+##OBJETS
+
+> plane:
+     mat:            plan
+     type:           plane
+     quadra:         0 1 0 0 0 0 0 0 0 -1
+     pos:            0 0 20
+     rot:            0 0 0
+     color:          255 200 233 255
+
+> plane2
+     mat:            plan
+     type:           plane
+     quadra:         0 1 0 0 0 0 0 0 0 -1
+     pos:            0 0 -2
+     rot:            0 0 0
+     color:          255 200 233
+
+> plane3
+     mat:            plan
+     type:           plane
+     quadra:         1 0 0 0 0 0 0 0 0 -1
+     pos:            20 0 0
+     rot:            0 0 90
+     color:          255 200 233 255
+
+> plane4
+     mat:            plan
+     type:           plane
+     quadra:         1 0 0 0 0 0 0 0 0 -1
+     pos:            -20 0 0
+     rot:            0 0 90
+     color:          255 200 233 255
+
+> plane5
+      mat:            plan
+      type:           plane
+      quadra:         0 1 0 0 0 0 0 0 0 -1
+      pos:            0 40 0
+      rot:            0 0 0
+      color:          255 200 233 255
+
+> plane6
+     mat:            plan
+     type:           plane
+     quadra:         0 1 0 0 0 0 0 0 0 -1
+     pos:            0 -40 0
+     rot:            0 90 0
+     color:          255 200 233 255
